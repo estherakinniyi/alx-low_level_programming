@@ -1,5 +1,3 @@
-table File  22 lines (21 sloc)  297 Bytes
-
 #include <stdio.h>
 /**
  * main - Entry point
