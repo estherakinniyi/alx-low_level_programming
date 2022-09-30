@@ -1,17 +1,24 @@
 #include "main.h"
-#include <string.h>
+
 /**
- * _puts - prints a string
- * @str: a stirng
- * Return: void
+ * _puts - prints a string, followed by a new line to stdout.
+ * @str: input string.
+ * Return: void.
  */
 void _puts(char *str)
 {
-	unsigned long int i;
+	int count = 0;
 
-	for (i = 0; i < strlen(str); i++)
+	while (count >= 0)
 	{
-		_putchar(str[i]);
+		if (str[count] != '\0')
+		{
+			_putchar(str[count]);
+			count++;
+		} else
+		{
+			count = -1;
+			_putchar('\n');
+		}
 	}
-	_putchar('\n');
 }
